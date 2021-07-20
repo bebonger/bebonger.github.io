@@ -60,7 +60,7 @@ $("document").ready(function () {
 			if (typeof target !== "undefined") {
 				setTimeout(() => {
 					window.location.href = target;
-				}, 1300);
+				}, 1700);
 				loadOut();
 			}
 		});
