@@ -1,81 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <title>Joash Foo | About Me</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
+<head>
+    <title>Joash Foo | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/pageTransition.js"></script>
+</head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
-        <div class="topnav">
-            <a href="Home.html">Home</a>
-            <a href="Hobbies.html">Hobbies</a>
-            <a href="Work.html">Work</a>
+<body>
+    <div id="navbar" class="nav">
+        <ul>
+            <li><a id="nav-1" class="nav-anim is-active" href="index.html">HOME<span class="wiggle"></span></a></li>
+            <li><a id="nav-2" class="nav-anim is-active" href="Hobbies.html">HOBBIES<span class="wiggle"></span></a>
+            </li>
+            <li><a id="nav-3" class="nav-anim is-active" href="Work.html">WORK<span class="wiggle"></span></a></li>
+            <li><a id="mobile-menu" class="icon"><i class="fa fa-bars"></i></a></li>
+        </ul>
+    </div>
+
+    <div id="scroll-back-arrow" class="arrow-scroll-anim is-active">
+        <img src="images/up-arrow.png" alt="up arrow">
+    </div>
+
+    <!--Intro Animation-->
+    <div class="intro-bg-transition intro-anim is-active"></div>
+    <div id="intro" class="content">
+
+        <img id="intro-img" class="intro-img is-active" src="images/ablobwhee.gif" alt="blob" width="250px"
+            height="auto">
+
+        <div class="intro-textbox">
+            <h1 id="intro-name" class="intro-name-transition name-anim is-active">My Hobbies</h1>
         </div>
+    </div>
 
-        <div class="parallax1" id="hobbies">
-            <video autoplay muted loop id="HobbiesVideo">
-                <source src="Videos/Hobbies.mp4" type="video/mp4">
-            </video>
-            <div class="caption">
-                <span class="image-container">                
-                    <img src="images/osu!.svg"
-                    style="width: 300px; height: 300px;">
-                </span>
-                <span class="border">MY HOBBIES</span>
-            </div>
-        </div>
-
-        <div class="content">
-            <h3>My journey in osu!</h3>
-            <p>
-                I started playing in March 2017 when a friend of mine insisted that i tried out the game. At first i would only play whenever my friend asked me to,
-                but i gradually started to get more interested in the game, practicing in my own free time and getting better, slowly but surely. Around mid-December 2018,
-                I was at a level where I could be called an amateur at the game. At this time, a player called 'sinn' spectated me at 3am in the morning while i was playing
-                casually, and invited me to to the osu!Singapore Discord community server. This was the start of many new encounters in my life. I started to get more active in the game, 
-                speeding through the rankings and participating in numerous community tournaments to test my skills. However, that made me realise my skillset was not very
-                well received in the community. This pushed me to further improve my gameplay and on January 12 2019, i became one of the top 100 players in the world. However,
-                this was still not the end. Finally on April 27 2019, I overtook the #1 Player of Singapore at that time and I still hold the crown to this day. I will continue
-                to represent Singapore in international tournaments if I have the time to do so as school is now eating away at my existence
-            </p>
-        </div>
-
-
-        <div class="content">
-            <div class="textbox">
-                <h3>Everything Will Freeze FC</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/adul7_QbLuk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="textbox">
-                <h3>Sunglow - SG Top Play</h3>
-                <iframe width="560" height="315" src="https://streamable.com/e/ygopc9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="textbox">
-                <h3>OWC2019 - Singapore vs Denmark</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Xz3OlViaV2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="textbox">
-                <h3>Top 10 osu!SG Players 2019</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/X02jR2wPfkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="textbox">
-                <h3>Gotoubun FC</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/70xj5yT0Mpo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="textbox">
-                <h3>OWC2020 - Singapore vs Japan</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/RkZpzR0y6d4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!--Who am I?-->
+    <div id="about-me" class="content">
+        <div id="js-about-scroll-listener-wrapper">
+            <div class="flex-container">
+                <div class="textbox">
+                    <h2 id="js-about-scroll-listener1">Who am I?</h2>
+                    <h4 id="js-about-scroll-listener2">
+                        Full time student currently studying in
+                        Nanyang
+                        Polytechnic, with a passion for game development.</h4>
+                    <p id="js-about-scroll-listener3">
+                        Joash has spent the last 17 years studying to fulfill his passion of developing games. He is
+                        currently
+                        completing
+                        his second year of his diploma in Nanyang Polytechnic's Game Development & Technology, occasionally
+                        working on side projects to gain more experience. He is fluent in several programming languages such
+                        as
+                        C++, Python and Javascript.
+                    </p>
+                </div>
+                <div id="js-about-scroll-listener4" class="image-container">
+                    <img src="images/myphoto.png">
+                </div>
             </div>
         </div>
+    </div>
 
-        <div class="content">
-            <h4>Learn more about osu! at</h4>
-            <a target="_blank" href="https://osu.ppy.sh/">
-                <img src="images/osu!.svg" class="icon">
-            </a>
+    <div id="my-hobby" class="content">
+        <div id="js-hobby-scroll-listener-wrapper">
+            <div class="flex-container">
+                <div class="textbox">
+                    <h2 id="js-hobby-scroll-listener1">My Hobbies</h2>
+                    <h4 id="js-hobby-scroll-listener2">#1 in Singapore in osu! for 2 consecutive years.</h4>
+                    <p id="js-hobby-scroll-listener3">
+                        Joash has been playing osu! for the past 4 years and has been reigning champion of Singapore for the past 2 years.
+                        He has represented Singapore twice in the osu! World Cup, placing top 16 both times, and also placing top 3 in the Great Singapore Tournament
+                        for 3 iterations in a row.
+                    </p>
+                </div>
+                <div id="js-hobby-scroll-listener4" class="image-container">
+                    <img src="images/Intuos.png">
+                </div>
+            </div>
         </div>
-    </body>
+    </div>
+
+</body>
+
 </html>
