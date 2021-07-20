@@ -56,11 +56,11 @@ $("document").ready(function () {
 		anchor.addEventListener("click", (e) => {
 			e.preventDefault();
 			let target = e.target.href;
-			console.log(target);
-			if (typeof target !== "undefined") {
+			console.log(e);
+			if (e.target.classList.contains("nav-anim")) {
 				setTimeout(() => {
 					window.location.href = target;
-				}, 1700);
+				}, 1600);
 				loadOut();
 			}
 		});
