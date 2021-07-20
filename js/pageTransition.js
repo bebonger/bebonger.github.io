@@ -49,7 +49,7 @@ function loadOut() {
 $("document").ready(function () {
 	loadIn();
 
-	const anchors = document.querySelectorAll("nav-anim");
+	const anchors = document.querySelectorAll("a");
 	for (let i = 0; i < anchors.length; ++i) {
 		const anchor = anchors[i];
 
@@ -57,10 +57,12 @@ $("document").ready(function () {
 			e.preventDefault();
 			let target = e.target.href;
 			console.log(target);
-			loadOut();
-			setTimeout(() => {
-				window.location.href = target;
-			}, 1300);
+			if (typeof target !== "undefined") {
+				setTimeout(() => {
+					window.location.href = target;
+				}, 1300);
+				loadOut();
+			}
 		});
 	}
 
