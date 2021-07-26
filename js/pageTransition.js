@@ -56,8 +56,8 @@ $("document").ready(function () {
 		anchor.addEventListener("click", (e) => {
 			e.preventDefault();
 			let target = e.target.href;
-			console.log(e);
-			if (e.target.classList.contains("nav-anim")) {
+			console.log(e.target.classList);
+			if (e.target.classList.contains("nav-targetted")) {
 				setTimeout(() => {
 					window.location.href = target;
 				}, 1600);

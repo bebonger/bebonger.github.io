@@ -15,12 +15,21 @@
 <body>
     <div id="navbar" class="nav">
         <ul>
-            <li><a id="nav-1" class="nav-anim is-active" href="index.html">HOME<span class="wiggle"></span></a></li>
-            <li><a id="nav-2" class="nav-anim is-active" href="Hobbies.html">HOBBIES<span class="wiggle"></span></a>
-            </li>
-            <li><a id="nav-3" class="nav-anim is-active" href="Work.html">WORK<span class="wiggle"></span></a></li>
+            <li><a id="nav-1" class="nav-targetted nav-anim is-active" href="index.html">HOME</a></li>
+            <li><a id="nav-2" class="nav-targetted nav-anim is-active" href="Hobbies.html">HOBBIES</a></li>
+            <li><a id="nav-3" class="nav-targetted nav-anim is-active" href="Work.html">WORK</a></li>
             <li><a id="mobile-menu" class="icon"><i class="fa fa-bars"></i></a></li>
         </ul>
+    </div>
+
+    <div id="mobile-nav">
+        <div class="mobile-nav-menu">
+            <ul>
+                <li><a class="nav-targetted" href="index.html">HOME</a></li>
+                <li><a class="nav-targetted" href="Hobbies.html">HOBBIES</a></li>
+                <li><a class="nav-targetted" href="Work.html">WORK</a></li>
+            </ul>
+        </div>
     </div>
 
     <div id="scroll-back-arrow" class="arrow-scroll-anim is-active">
@@ -30,13 +39,14 @@
     <!--Intro Animation-->
     <div class="intro-bg-transition intro-anim is-active"></div>
     <div id="intro" class="content">
+        <div id="js-intro-scroll-listener-wrapper">
+            <img id="intro-img" class="intro-img is-active" src="images/ablobwhee.gif" alt="blob" width="250px"
+                height="auto">
 
-        <img id="intro-img" class="intro-img is-active" src="images/ablobwhee.gif" alt="blob" width="250px"
-            height="auto">
-
-        <div class="intro-textbox">
-            <h1 id="intro-name" class="intro-name-transition name-anim is-active">Joash Foo</h1>
-            <h3 id="intro-sub" class="intro-sub-transition sub-anim is-active">Game Developer & Student</h2>
+            <div class="intro-textbox">
+                <h1 id="intro-name" class="intro-name-transition name-anim is-active">Joash Foo</h1>
+                <h3 id="intro-sub" class="intro-sub-transition sub-anim is-active">Game Developer & Student</h2>
+            </div>
         </div>
     </div>
 
