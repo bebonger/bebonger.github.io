@@ -3,7 +3,7 @@ body {
 	scroll-behavior: smooth;
 	margin: 0px;
 	height: 100%;
-	background-color: rgb(195, 98, 65);
+	background-color: #fc6341;
 	color: white;
 	font: 100 15px/1.8 "Ginger Regular", sans-serif;
 	font-weight: lighter;
@@ -61,12 +61,6 @@ body {
 	transform: translateY(10px);
 }
 
-.nav a.icon {
-	margin: 0px 15px;
-	transform: scale(2, 2);
-	display: none;
-}
-
 .nav-anim.is-active {
 	transform: translateY(-200%);
 }
@@ -94,22 +88,60 @@ body {
 	transform: scale(0.3, 0.2) translate(100px, 700px);
 }
 
+.nav .nav-button-container {
+	display: none;
+	cursor: pointer;
+	margin: 0px 15px 0px 0px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+	width: 35px;
+	height: 5px;
+	background-color: #fff;
+	margin: 6px 0;
+	transition: 0.4s;
+}
+
+.change .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+	opacity: 0;
+}
+
+.change .bar3 {
+	-webkit-transform: rotate(45deg) translate(-8px, -8px);
+	transform: rotate(45deg) translate(-8px, -8px);
+}
+
 #mobile-nav {
 	display: none;
 }
 
 .mobile-nav-menu {
 	position: fixed;
-	display: none;
+	display: block;
 	width: 100%;
 	height: 100%;
 	background-color: rgb(70, 70, 70);
 	z-index: 97;
+	opacity: 0%;
+	transition: 0.5s ease;
+	pointer-events: none;
+}
+
+.mobile-nav-menu.is-active {
+	opacity: 100%;
+	pointer-events: all;
 }
 
 .mobile-nav-menu ul {
 	padding: 0;
-	margin: 50px;
+	margin: 100px;
 }
 
 .mobile-nav-menu li {
@@ -282,7 +314,7 @@ body {
 }
 
 .video-wrapper h4 {
-	margin: 15px 0px 0px 0px;
+	margin: 15px 0px 15px 0px;
 }
 
 .footer {
@@ -298,6 +330,7 @@ body {
 	align-items: center;
 	flex-wrap: wrap;
 	overflow: auto;
+	padding: 0px 0px 100px 0px;
 }
 
 .footer {
@@ -306,7 +339,7 @@ body {
 	background-color: rgb(30, 30, 30);
 }
 
-.icon {
+.osu-icon {
 	vertical-align: middle;
 	width: auto;
 	height: 100px;
@@ -314,7 +347,7 @@ body {
 	transition: all 0.5s;
 }
 
-.icon:hover {
+.osu-icon:hover {
 	transform: scale(1.1, 1.1);
 }
 
@@ -393,7 +426,8 @@ iframe {
 	.nav a {
 		display: none;
 	}
-	.nav a.icon {
+
+	.nav .nav-button-container {
 		float: right;
 		display: block;
 	}

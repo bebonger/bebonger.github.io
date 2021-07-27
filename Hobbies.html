@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Joash Foo | Home</title>
+    <title>Joash Foo | Hobbies</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -15,15 +15,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <body>
-    <div id="navbar" class="nav">
+     <!--Navbar-->
+     <div id="navbar" class="nav">
         <ul>
             <li><a id="nav-1" class="nav-targetted nav-anim is-active" href="index.html">HOME</a></li>
             <li><a id="nav-2" class="nav-targetted nav-anim is-active" href="Hobbies.html">HOBBIES</a></li>
             <li><a id="nav-3" class="nav-targetted nav-anim is-active" href="Work.html">WORK</a></li>
-            <li><a id="mobile-menu" class="icon"><i class="fa fa-bars"></i></a></li>
+            <li>
+                <a id="mobile-menu" class="nav-button-container">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </a>
+            </li>
         </ul>
     </div>
 
+    <!--Mobile Navigation Menu-->
     <div id="mobile-nav">
         <div class="mobile-nav-menu">
             <ul>
@@ -42,9 +50,6 @@
     <div class="intro-bg-transition intro-anim is-active"></div>
     <div id="intro" class="content">
         <div id="js-intro-scroll-listener-wrapper">
-            <img id="intro-img" class="intro-img is-active" src="images/osu!.svg" alt="Intuos" width="500px"
-                height="auto">
-
             <div class="intro-textbox">
                 <h1 id="intro-name" class="intro-name-transition name-anim is-active">My Hobbies</h1>
             </div>
@@ -60,9 +65,11 @@
     </div>
     <div id="hobbies-footer" class="footer">
         <h4>Learn more about osu! at</h4>
+
         <a target="_blank" href="https://osu.ppy.sh/">
-            <img src="images/osu!.svg" class="nav-targetted icon">
+            <img src="images/osu!.svg" class="nav-targetted osu-icon">
         </a>
+
     </div>
 </body>
 

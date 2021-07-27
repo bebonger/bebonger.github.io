@@ -55,8 +55,10 @@ $("document").ready(function () {
 
 		anchor.addEventListener("click", (e) => {
 			e.preventDefault();
-			let target = e.target.href;
+			// let target = e.target.href;
+			let target = anchor.href;
 			console.log(e.target.classList);
+			console.log(target);
 			if (e.target.classList.contains("nav-targetted")) {
 				setTimeout(() => {
 					window.location.href = target;

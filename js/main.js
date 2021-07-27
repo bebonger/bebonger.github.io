@@ -86,17 +86,19 @@ function updateDivScroll(Div, value) {
 	);
 }
 
+function updateNavForMobile() {
+	if (window.innerWidth > 900) {
+		// $(document.body).removeClass("active");
+		$("#mobile-nav").css("display", "none");
+	} else {
+		$("#mobile-nav").css("display", "block");
+	}
+}
 
 var resizeTimer;
 
 function updateResize() {
-	if (window.innerWidth > 900) {
-		// $(document.body).removeClass("active");
-		$("#mobile-nav").css("display", "none");
-
-	} else {
-		$("#mobile-nav").css("display", "block");
-	}
+	updateNavForMobile();
 
 	$(document.body).addClass("notransition");
 	clearTimeout(resizeTimer);
@@ -110,14 +112,18 @@ function updateResize() {
 
 $(document).ready(function () {
 
-	// mobile nav bars
-	if (window.innerWidth > 900) {
-		// $(document.body).removeClass("active");
-		$("#mobile-nav").css("display", "none");
-	} else {
-		$("#mobile-nav").css("display", "block");
+	var title = $(document).attr('title');
+	console.log(title);
+	if (title == "Joash Foo | Home") {
+		console.log("Home");
+		$(document.body).css("background-color", "#fc6341");
+	} else if (title == "Joash Foo | Hobbies") {
+		$(document.body).css("background-color", "#3FA7D6");
 	}
 
+	
+	// mobile nav bars
+	updateNavForMobile();
 	introAnimation();
 
 	let introDiv = $("#intro");
@@ -141,11 +147,12 @@ $(document).ready(function () {
 	$("#mobile-menu").click(function() {
 		console.log("clicked");
 		if (mobileMenuActive) {
-			$(".mobile-nav-menu").css("display", "none");
+			$(".mobile-nav-menu").removeClass("is-active");
 		} else {
-			$(".mobile-nav-menu").css("display", "block");
+			$(".mobile-nav-menu").addClass("is-active");
 		}
 
+		document.querySelector("#mobile-menu").classList.toggle("change");
 		mobileMenuActive = !mobileMenuActive;
 	});
 
