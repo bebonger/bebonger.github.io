@@ -114,11 +114,13 @@ $(document).ready(function () {
 
 	var title = $(document).attr('title');
 	console.log(title);
+	htmlTags = document.getElementsByTagName("html");
 	if (title == "Joash Foo | Home") {
 		console.log("Home");
-		$(document.body).css("background-color", "#fc6341");
+		document.body.style.backgroundColor = "#fc6341";
 	} else if (title == "Joash Foo | Hobbies") {
-		$(document.body).css("background-color", "#3FA7D6");
+		document.body.style.backgroundColor = "#3FA7D6";
+		document.getElementsByTagName("html")[0].setAttribute("background-color", "#3FA7D6");
 	}
 
 	
