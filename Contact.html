@@ -7,17 +7,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/pageTransition.js"></script>
+    <script src="js/contact.js"></script>
 </head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <body>
      <!--Navbar-->
-    <div id="navbar" class="nav">
+     <div id="navbar" class="nav">
         <ul>
             <li><a id="nav-1" class="nav-targetted nav-anim is-active" href="index.html">HOME</a></li>
             <li><a id="nav-2" class="nav-targetted nav-anim is-active" href="Hobbies.html">HOBBIES</a></li>
-            <li><a id="nav-3" class="nav-targetted nav-anim is-active" href="Work.html">WORK</a></li>
+            <li><a id="nav-3" class="nav-targetted nav-anim is-active" href="Contact.html">CONTACT</a></li>
             <li>
                 <a id="mobile-menu" class="nav-button-container">
                     <div class="bar1"></div>
@@ -34,7 +35,7 @@
             <ul>
                 <li><a class="nav-targetted" href="index.html">HOME</a></li>
                 <li><a class="nav-targetted" href="Hobbies.html">HOBBIES</a></li>
-                <li><a class="nav-targetted" href="Work.html">WORK</a></li>
+                <li><a class="nav-targetted" href="Contact.html">CONTACT</a></li>
             </ul>
         </div>
     </div>
@@ -48,6 +49,35 @@
 
     <!--Who am I?-->
     <div id="contact" class="content">
+        <div class="flex-container">
+            <div class="textbox">
+                <h3>get in touch</h3>
+
+                <div class="container">
+                    <label for="fname">Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+                    <label for="phone">Number</label>
+                    <input type="text" id="phone" name="phone" placeholder="Your Phone Number.." required>
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email.."required>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Your message.." style="height:200px" required></textarea>
+                    
+                    <input id="submit" type="submit" value="Submit">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="social-media-footer" class="footer">
+        <div class="flex-container">
+            <a class="nav-targetted" href="https://twitter.com/dmeonicla"><img src="images/twitter-logo.png" width="32px;"></a>
+            <a class="nav-targetted" href="https://www.instagram.com/bebonger/"><img src="images/instagram-logo.png" width="32px;"></a>
+            <a class="nav-targetted" href="https://github.com/bebonger"><img src="images/github-logo.png" width="32px;"></a>
+        </div>
     </div>
 </body>
 

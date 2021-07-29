@@ -373,6 +373,67 @@ body {
 	background-color: rgb(50, 50, 50);
 }
 
+#contact h3 {
+	padding: 30px;
+}
+
+#contact .flex-container {
+	overflow-x: hidden;
+}
+
+#contact .textbox {
+	width: 100%;
+	text-align: center;
+	padding: 150px 30% 30px 30%;
+}
+
+input[type="text"],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: none;
+}
+
+input[type="submit"] {
+	background-color: #04aa6d;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #45a049;
+}
+
+#contact .container {
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: rgb(60, 60, 60);
+	padding: 20px;
+}
+
+/*---------------------------------------------------------*/
+/*Social Media Footer*/
+/*---------------------------------------------------------*/
+
+#social-media-footer a {
+	margin: 15px;
+}
+
+#social-media-footer .flex-container {
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
 /*---------------------------------------------------------*/
 /*Text style overloads*/
 /*---------------------------------------------------------*/
@@ -454,23 +515,18 @@ iframe {
 		display: block;
 	}
 
-	.nav.responsive {
-		position: relative;
-	}
-	.nav.responsive .icon {
-		position: absolute;
-		right: 0;
-		top: 0;
-	}
-	.nav.responsive a {
-		float: none;
-		display: block;
-		text-align: left;
-	}
-
 	.flex-container {
 		display: flex;
 		flex-direction: column;
+	}
+
+	#contact .flex-container {
+		display: flex;
+		flex-direction: row;
+	}
+
+	#contact .textbox {
+		padding: 200px 50px 30px 50px;
 	}
 
 	.intro-textbox {
