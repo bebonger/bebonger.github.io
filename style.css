@@ -53,10 +53,13 @@ a {
 	flex-direction: row;
 }
 
-.center {
+.center-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+
+    height: 400px;
+    width: auto;
 }
 
 @font-face {
@@ -90,11 +93,6 @@ h2 {
     filter: drop-shadow(0 0 7px rgba(255, 255, 255, 1));
 }
 
-#logo img {
-    height: 400px;
-    width: auto;
-}
-
 @media screen and (max-width: 900px) {
 
     .user-logo-holder {
@@ -103,7 +101,11 @@ h2 {
         margin: 0px;
     }
 
-    #logo img {
+    .center-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
         height: 200px;
         width: auto;
     }
