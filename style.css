@@ -37,14 +37,9 @@ a {
     z-index: -1;
 }
 
-.user-logo {
+.user-logo-holder {
     height: 400px;
     width: 100%;
-
-    background-image: url("images/blob.png");
-    background-repeat: no-repeat, no-repeat;
-    background-size: contain;
-    background-position: center; 
     margin: 15px;
 }
 
@@ -56,6 +51,12 @@ a {
 	align-items: center;
 	justify-content: center;
 	flex-direction: row;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @font-face {
@@ -89,17 +90,22 @@ h2 {
     filter: drop-shadow(0 0 7px rgba(255, 255, 255, 1));
 }
 
+#logo img {
+    height: 400px;
+    width: auto;
+}
+
 @media screen and (max-width: 900px) {
 
-    .user-logo {
-        height: 200px;
+    .user-logo-holder {
+        height: 230px;
         width: 100%;
-    
-        background-image: url("images/blob.png");
-        background-repeat: no-repeat, no-repeat;
-        background-size: contain;
-        background-position: center; 
         margin: 0px;
+    }
+
+    #logo img {
+        height: 200px;
+        width: auto;
     }
 
     h1 {
