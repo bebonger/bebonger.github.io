@@ -60,6 +60,7 @@ a {
 
     height: 400px;
     width: auto;
+    transition: 0.3s ease;
 }
 
 @font-face {
@@ -74,6 +75,7 @@ h1 {
     font-size: 86px;
     padding: 0px;
     margin: 0px;
+    transition: 0.3s ease;
 }
 
 h2 {
@@ -82,9 +84,11 @@ h2 {
     font-size: 24px;
     padding: 0px;
     margin: 0px;
+    transition: 0.3s ease;
 }
 
 .button-image {
+    width: 32px;
     transition: 0.2s;
 }
 
